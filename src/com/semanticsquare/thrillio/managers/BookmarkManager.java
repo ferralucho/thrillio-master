@@ -1,5 +1,7 @@
 package com.semanticsquare.thrillio.managers;
 
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Map;
 
@@ -13,6 +15,8 @@ import com.semanticsquare.thrillio.entities.Movie;
 import com.semanticsquare.thrillio.entities.User;
 import com.semanticsquare.thrillio.entities.UserBookmark;
 import com.semanticsquare.thrillio.entities.WebLink;
+import com.semanticsquare.thrillio.util.HttpConnect;
+import com.semanticsquare.thrillio.util.IOUtil;
 
 public class BookmarkManager {
 	// also implements Singleton pattern
@@ -74,9 +78,8 @@ public class BookmarkManager {
 	public void saveUserBookmark(User user, Bookmark bookmark) {
 		UserBookmark userBookmark = new UserBookmark();
 		userBookmark.setUser(user);
-		userBookmark.setBookmark(bookmark);
+		userBookmark.setBookmark(bookmark);		
 		
-		/*
 		if (bookmark instanceof WebLink) {
 			try {				
 				String url = ((WebLink)bookmark).getUrl();
@@ -93,9 +96,7 @@ public class BookmarkManager {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}
-*/
-		
+		}		
 		dao.saveUserBookmark(userBookmark);
 	}
 
