@@ -4,7 +4,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
-	<classpathentry kind="lib" path="/Users/macbookpro/Documents/eclipse_workspace/Java/external JARs/commons-lang3-3.6.jar"/>
-	<classpathentry kind="lib" path="/Users/macbookpro/Documents/eclipse_workspace/Java/external JARs/mysql-connector-java-5.1.44-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Documents/PROGRAMACION/JAVA/jid/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Documents/PROGRAMACION/JAVA/jid/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

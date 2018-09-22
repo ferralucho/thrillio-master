@@ -45,6 +45,9 @@ public class DataStore {
 		// Load JDBC Driver
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
+			//One way is loading it like this: Class.forName("com.mysql.jdbc.Driver"); Register itself (when we load it) within the jdbc api which is called DriverManager, that’s in the java.sql. 
+			//Another one is: new com.mysql.jdbc.Driver(); (we need to add jar in the classpath)
+			//new com.mysql.jdbc.Driver();
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
